@@ -1,11 +1,13 @@
 package net.mvanm.characterservice.model;
 
 import lombok.Builder;
+import lombok.Getter;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Builder
+@Getter
 public class BookInfo {
     private final String name;
     private final String isbn;
