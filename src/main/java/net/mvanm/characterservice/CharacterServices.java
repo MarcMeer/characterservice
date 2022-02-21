@@ -1,9 +1,10 @@
 package net.mvanm.characterservice;
 
 import lombok.AllArgsConstructor;
-import net.mvanm.characterservice.model.Book;
+import net.mvanm.characterservice.apioficeandfireclient.ApiOfIceAndFireClient;
+import net.mvanm.characterservice.apioficeandfireclient.model.Book;
 import net.mvanm.characterservice.model.BookInfo;
-import net.mvanm.characterservice.model.Character;
+import net.mvanm.characterservice.apioficeandfireclient.model.Character;
 import net.mvanm.characterservice.model.CharcterInfo;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

@@ -2,6 +2,7 @@ package net.mvanm.characterservice.model;
 
 import lombok.Builder;
 import lombok.Getter;
+import net.mvanm.characterservice.apioficeandfireclient.model.Book;
 
 import java.util.List;
 import java.util.stream.Collectors;
