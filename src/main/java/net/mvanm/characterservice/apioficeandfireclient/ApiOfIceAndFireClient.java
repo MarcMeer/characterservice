@@ -1,15 +1,17 @@
-package net.mvanm.characterservice;
+package net.mvanm.characterservice.apioficeandfireclient;
 
-import net.mvanm.characterservice.model.Character;
+import lombok.AllArgsConstructor;
+import net.mvanm.characterservice.apioficeandfireclient.model.Character;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 
 @Service
+@AllArgsConstructor
 public class ApiOfIceAndFireClient {
+    private final WebClient webClient;
     public Flux<Character> retrieveCharaters() {
-        return WebClient.builder().baseUrl("https://www.anapioficeandfire.com/api/")
-                .build()
+        return webClient
                 .get()
                 .uri("characters")
                 .retrieve()
